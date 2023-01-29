@@ -1,0 +1,29 @@
+{
+    "extends": [
+        "airbnb-base",
+        "plugin:mithril/recommended"
+    ],
+    "plugins": [
+        "mithril"
+    ],
+    "env": {
+      "browser": true,
+      "node": true
+    },
+    "rules": {
+        "max-len": ["warn", {
+            "code": 120,
+            "comments": 500,
+            "ignoreComments": true,
+            "ignoreUrls": true,
+            "ignoreTemplateLiterals": true,
+            "ignoreRegExpLiterals": true
+        }], // reason: don't touch comments. URLs, templates, and RegExp may be inflexible.
+        "no-plusplus": "off", // reason: unary operators are powerful and terse. why avoid terser code?
+        "no-param-reassign": "off", // reason: it is idiomatic to mutate vnode.attrs in mithril.
+        "no-nested-ternary": "off", // reason: it is idiomatic to nest ternary statements in mithril.
+        "import/prefer-default-export": "off", // reason: there may be a reason why we don't use default export.
+        "no-bitwise": "off" // reason: bitwise operators are used a lot in my projects.
+    }
+}
+  

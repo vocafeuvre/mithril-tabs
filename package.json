@@ -1,0 +1,37 @@
+{
+  "name": "mithril-tabs",
+  "version": "0.1.0",
+  "description": "Port of the react-tabs package into mithril.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint src/**",
+    "format": "eslint src/** --fix",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vocafeuvre/mithril-tabs.git"
+  },
+  "keywords": [
+    "mithril",
+    "tabs",
+    "mithril-tabs"
+  ],
+  "author": "vocafeuvre",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vocafeuvre/mithril-tabs/issues"
+  },
+  "homepage": "https://github.com/vocafeuvre/mithril-tabs#readme",
+  "dependencies": {
+    "clsx": "^1.2.1",
+    "mithril": "^2.2.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.33.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-mithril": "^0.2.0",
+    "husky": "^8.0.3"
+  }
+}
